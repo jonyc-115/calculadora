@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+:root {
+  --gap: 0.6rem;
+  --back-btn: ;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #b7b7b7;
+}
+
+.calc {
+  background: linear-gradient(45deg, #4c4c4c, #2e2f32);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  padding: 1.3rem;
+  border-radius: 1.3rem;
+  box-shadow: 0 0 0.2rem 0.2rem #3434348d;
+}
+
+.blink {
+  animation: alternancia 1.3s infinite;
+  font-weight: 100;
+  opacity: 1;
+}
+
+.none {
+  display: none;
+}
+
+.print-result {
+  height: 8rem;
+  width: 100%;
+  border-radius: 0.6rem;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+hr {
+  border-color: #575757;
+  height: 2.5px;
+}
+
+.calc-buttons {
+  display: flex;
+  gap: var(--gap);
+}
+
+.grid-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 1.8rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 400;
+  box-shadow: 0 0 0.4rem #3a3a3a;
+  transition: all 0.3s ease-in-out;
+  background-color: #565656;
+  color: #b7b7b7;
+}
+
+.btn-content:hover {
+  box-shadow: 0 0 0 0 #3c3c3c;
+  background-color: #707070;
+  color: #fff;
+}
+
+.btn-number {
+  color: #d7d7d7;
+}
+
+.flex-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.operation {
+  background-color: #565656;
+  color: #09d409;
+  font-size: 2rem;
+}
+
+.operation:hover {
+  background-color: #707070;
+  color: #28ca28;
+}
+
+#equal {
+  background-color: #09d409;
+  font-size: 2rem;
+  color: #f1f1f1;
+}
+
+#iqual:hover {
+  background-color: #25f025;
+  color: #ffffff;
+}
+
+#delete {
+  background-color: #565656;
+  color: red;
+}
+
+#delete:hover {
+  background-color: #bfafaf;
+}
+
+@keyframes alternancia {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

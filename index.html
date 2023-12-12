@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="calc">
+        <div class="print-result">
+          <p id="display"><span class="blink">|</span></p>
+        </div>
+        <hr />
+        <div class="calc-buttons">
+          <ul class="grid-buttons">
+            <li><button class="btn-content" id="delete">C</button></li>
+            <li><button class="btn-content operation">()</button></li>
+            <li><button class="btn-content operation">%</button></li>
+            <li><button class="btn-content btn-number">7</button></li>
+            <li><button class="btn-content btn-number">8</button></li>
+            <li><button class="btn-content btn-number">9</button></li>
+            <li><button class="btn-content btn-number">4</button></li>
+            <li><button class="btn-content btn-number">5</button></li>
+            <li><button class="btn-content btn-number">6</button></li>
+            <li><button class="btn-content btn-number">1</button></li>
+            <li><button class="btn-content btn-number">2</button></li>
+            <li><button class="btn-content btn-number">3</button></li>
+            <li><button class="btn-content">+/-</button></li>
+            <li><button class="btn-content btn-number">0</button></li>
+            <li><button class="btn-content" id="dot">.</button></li>
+          </ul>
+          <ul class="flex-buttons">
+            <li><button class="btn-content operation" id="div">÷</button></li>
+            <li><button class="btn-content operation" id="mult">×</button></li>
+            <li><button class="btn-content operation" id="rest">-</button></li>
+            <li><button class="btn-content operation" id="sum">+</button></li>
+            <li><button class="btn-content" id="equal">=</button></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
