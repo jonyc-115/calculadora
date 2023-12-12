@@ -22,5 +22,3 @@ Esta es una calculadora simple que realiza operaciones básicas como suma, resta
 - HTML
 - CSS
 - JavaScript
-
-## Licencia
